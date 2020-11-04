@@ -17,14 +17,14 @@
         <h1>Anna Foshee</h1>
         <p>Higher Education and Student Affairs Professional</p>
     </header>
-    <main>
-        <article class="container">
+    <main class="container">
+        <article class="item about">
             <h2>About Me</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
                 </p>
         </article>
-        <article class="container">
+        <article class="item experience">
             <h2>Experience</h2>
             <h3>Higher Education</h3>
                 <p>
@@ -39,7 +39,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
                 </p>
         </article>
-        <article class="container">
+        <article class="item education">
             <h2>Education</h2>
                 <p>Master of Science in Business Communication | Spalding University</p>
                 <p>Bachelor of Arts in History | Butler University</p>
@@ -47,7 +47,7 @@
             <p>QPR Suicide Prevention Gatekeep Program | Spalding Univeristy</p>
             <p>Professional Grant Development Workship | Grant Training Center</p>
         </article>
-        <aside>
+        <aside class="item skills">
             <h3>Skills</h3>
         <ul>
             <li>Organizational Leadership</li>
@@ -60,33 +60,44 @@
         </aside>
     </main>
     <footer>
-        <article class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="fname">Full Name</label>
-                <input type="text" id="fname" name="fullname" placeholder="Your full name">
+        <article class="container2">
+            <h2 class="contact_me">Contact Me</h2>
+            <form class="form">
+                <div class="form_item">
+                <label  for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your full name">
+                </div>
 
-                <label for="reason">Why are you contacting me today?</label>
-                <input type="radio" id="inquiry" name="reason" value="inquiry">
-                <label for="inquiry">General Inquiry</label>
-                <input type="radio" id="training" name="reason" value="training">
-                <label for="inquiry">Book a training</label>
-                <input type="radio" id="speaker" name="reason" value="speaker">
-                <label for="inquiry">Book a speeking engagement</label>
+                <div class="form_item">
+                <label for="reason">Why are you contacting me today?</label>   
+                    <span>
+                        <input type="radio" id="inquiry" name="reason" value="inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                        
+                        <input type="radio" id="training" name="reason" value="training">
+                        <label for="inquiry">Book a training</label>
 
+                        <input type="radio" id="speaker" name="reason" value="speaker">
+                        <label for="inquiry">Book a speeking engagement</label>                    
+                    </span>
+                </div>
+
+                <div class="form_item">
                 <label for="message">Please type your message below.</label>
-                <textarea id="message" name="message" placeholder="Type here..."></textarea>
-
+                    <textarea id="message" name="message" placeholder="Type here..."></textarea>
+                </div>
                 <input type="submit" value="Submit">
+                
             </form>
         </article>
-        <div class="contact">
+
+        <aside class="contact">
             <h3></h3>
                 <li>Email: <a href="mailto:annafosh@gmail.com&subject=Hello!%20I%20want%20to%20learn%20more!" target="_top">anna.fosh@gmail.com</a></li>
                 <li>Phone: (555)555-5555</li>
                 <li><a href="#">LinkedIn</a></li>
             <p>Copyright 2020, Anna Foshee</p>
-        </div>
+        </aside>
     </footer>
 </body>
 </html>
