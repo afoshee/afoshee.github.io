@@ -1,4 +1,8 @@
 
+header, main, footer {
+  margin: 0;
+  padding: 1px;
+}
 
 .topnav {
   overflow: hidden;
@@ -13,7 +17,6 @@
   font-size: 17px;
   display: block;
   text-align: center;
-
 }
 
 .topnav a:hover {
@@ -23,7 +26,7 @@
 
 body {
   color: navy;
-  background: rgb(189, 225, 241);
+  background: lightblue;
 	padding-left: 5%;
 	padding-right: 5%;
 }
@@ -32,21 +35,14 @@ h2 {
   color: aqua;
 }
 
-.container {
+.maincontainer {
 	padding: 10px;
-	background: white;
+  background-color: white;
   border-radius: 10px;
 	margin: 45px auto;
 }
-.item {
-	color: white;
-	padding: 10px 30px;
-	margin: 7px;	
-	background: navy;
-	border-radius: 10px;
-}
 
-.container2 {
+.footercontainer {
   padding: 10px;
 	background: white;
   border-radius: 10px;
@@ -63,17 +59,21 @@ h2 {
 
   /* flexbox */
 
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+.maincontainer {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
 
-  }
+}
 
-.item {
+.item1, .item2, .item3, .item4 {
+  color: cornsilk;
+  padding: 10px 30px;
+  margin: 7px;	
+  background: navy;
+  border-radius: 10px;
   flex-grow: 2;
-  
 }
 
 .form {
@@ -101,14 +101,25 @@ h2 {
 
   @media (min-width: 600px) {
     body {
-      background: orange;
+      background: navy;
+      color: cornsilk;
     }
 
     *, *:before, *:after {
       box-sizing: inherit;
     }
-    div {
+    /* div {
       display: block;
+    } */
+
+    h2 {
+      color: navy;
+    }
+
+    .headercontainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 
     .topnav {
@@ -118,7 +129,7 @@ h2 {
     }
 
     .topnav a {
-      color: white;
+      color: cornsilk;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -127,8 +138,44 @@ h2 {
     }
 
     .topnav a:hover {
-      background-color: white;
+      background-color: cornsilk;
       color: black;
     }
-  }
 
+    .maincontainer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+    }
+
+    .item1, .item2, .item3, .item4 {
+      color: navy;
+      padding: 10px 30px;
+      margin: 7px;	
+      background: lightblue;
+      border-radius: 10px;
+    }
+
+    .experience {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      text-align: baseline;
+
+    }
+
+    
+
+/*     
+    .ex_item1,
+    .ex_item3,
+    .ex_item5 {
+      align-self: flex-start;
+    }
+
+    .ex_item2,
+    .ex_item4,
+    .ex_item6 {
+      align-self: flex-end;
+    } */
