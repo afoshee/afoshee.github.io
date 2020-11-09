@@ -26,7 +26,7 @@ header, main, footer {
 
 body {
   color: navy;
-  background: lightblue;
+  background-color: lightblue;
 	padding-left: 5%;
 	padding-right: 5%;
 }
