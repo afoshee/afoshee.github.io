@@ -65,6 +65,11 @@ h2:nth-of-type(1) {
   color: rosybrown;
 }
 
+h3:nth-child(1),
+h3:nth-child(3) {
+  color: navy;
+}
+
 /* class styles */
 
 .topnav {
@@ -104,6 +109,41 @@ h2:nth-of-type(1) {
   .topnav a {
     display: inline-block;
   }
+
+  .flexbox {
+    display: flex;
+    padding: 30px 30px 30px 50px;
+  }
+
+  .about_me {
+    padding-right: 15px;
+  }
+
+  .more {
+    flex-grow: 2;
+    flex-basis: 50%;
+  }
+
+  /* main {
+    float: left;
+    width: 70%;
+  }
+
+  div {
+    float: right;
+    width: 30%;
+  } */
+
+
+/* 
+  form {
+    display: block;
+    background: lavenderblush;
+    margin: 0;
+    padding: 0;
+    border: 5px solid lightcoral;
+    border-radius: 0;
+  } */
 
 
 
