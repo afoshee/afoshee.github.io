@@ -4,7 +4,7 @@
 /* tag styles */
 
 html {
-  font-size: 100%;
+  /* font-size: 100%; */
   background: rosybrown;
   /* display: block; */
 }
@@ -93,8 +93,28 @@ h3:nth-child(3) {
 
 /* media queries */
 
-@media (min-width: 650px) and (max-width: 1400px) {
+@media (min-width: 650px) {
   body {
+    color: purple;
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: baseline;
+  }
+
+  .topnav a {
+    display: inline-block;
+  }
+
+
+}
+
+@media (min-width: 650px) and (max-width: 1100px) {
+  /* body {
     color: purple;
     display: block;
   }
@@ -117,12 +137,13 @@ h3:nth-child(3) {
 
   .about_me {
     padding-right: 15px;
+    width: 70%;
   }
 
   .more {
-    flex-grow: 2;
-    flex-basis: 50%;
-  }
+    /* flex-grow: 5; */
+    /* width: 30%;
+  } */ 
 
   /* main {
     float: left;
@@ -149,8 +170,9 @@ h3:nth-child(3) {
 
 }
  
-@media (min-width: 1400px) {
-  body {
+@media (min-width: 1000px) {
+
+  /* body {
     color: black;
   }
 
@@ -159,13 +181,50 @@ h3:nth-child(3) {
     justify-content: space-between;
     padding: 15px;
     align-items: baseline;
+  } */
+
+  .flexbox {
+    display: flex;
+    padding: 30px 30px 30px 50px;
+  }
+
+  .about_me {
+    padding-right: 15px;
+    width: 70%;
+  }
+
+  .more {
+    /* flex-grow: 5; */
+    width: 30%;
+  }
+
+  .myname {
+    font-size: 40px;
+
   }
 
   .topnav a {
-    display: inline-block;
+    /* display: inline-block; */
+    font-size: 20px;
   }
- 
-  .experience {
-    display: flex;
+
+  .about_me {
+    width: 60%;
   }
+
+  .more {
+    /* flex-grow: 5; */
+    width: 40%;
+  }
+}  
+
+@media (min-width: 1200px) {
+  li {
+    list-style-type: none;
+  }
+
+  .more {
+    text-align: center;
+  }
+
 }

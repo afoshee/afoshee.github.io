@@ -12,7 +12,7 @@
         
         <!-- Header -->
         <header>
-            <h1>Anna Foshee</h1>
+            <h1 class="myname">Anna Foshee</h1>
             <nav class="topnav">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
@@ -83,7 +83,6 @@
 
 
             <!-- Sidebar -->
-            <!-- <div> -->
                 <aside class="sidebar">
                     <h3>Certifications</h3>
                         <p>
@@ -106,7 +105,7 @@
                 </aside>
                 
                 <!-- form -->
-                <form name="contactform" onsubmit="return validateForm()" method="post"> 
+                <!-- <form name="contactform" onsubmit="return validateForm()" method="post"> 
 
                     <label for="fname">Full Name</label></b><br>
                     <input type="text" id="fname" name="fullname" placeholder="Your full name"><br> 
@@ -128,9 +127,36 @@
 
 
                     <input type="submit" value="Submit">
-                </form>
+                </form> -->
             </div>
         </main>
+
+            <form name="contactform" onsubmit="return validateForm()" method="post"> 
+
+                <label for="fname">Full Name</label></b><br>
+                <input type="text" id="fname" name="fullname" placeholder="Your full name"><br> 
+
+                <label for="reason">Why are you contacting me today?</label><br> 
+                    <span>
+                        <input type="radio" id="inquiry" name="reason" value="inquiry">
+                        <label for="inquiry">General Inquiry</label>
+                        
+                        <input type="radio" id="training" name="reason" value="training">
+                        <label for="inquiry">Book a training</label>
+
+                        <input type="radio" id="speaker" name="reason" value="speaker">
+                        <label for="inquiry">Book a speeking engagement</label>                    
+                    </span><br>
+
+                <label for="message">Please type your message below.</label><br>
+                <textarea id="message" name="message" placeholder="Type here..."></textarea><br> 
+
+
+                <input type="submit" value="Submit">
+            </form>
+
+
+        <!-- </main> -->
         <!-- Footer -->
         <footer class="footer">
             <li>Email: <a href="mailto:annafosh@gmail.com&subject=Hello!%20I%20want%20to%20learn%20more!" target="_top">anna.fosh@gmail.com</a></li>
@@ -141,4 +167,3 @@
 
     </body>
 </html>
-
