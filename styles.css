@@ -22,12 +22,18 @@ body {
   /* max-width: 75rem; */
 }
 
-aside, footer, header, main, section {
+footer, header, main, section {
   display: block;
   margin: 0;
   padding: 15px;
   border: 2px solid rosybrown;
   /* color: white; */
+}
+
+aside {
+  display: block;
+  margin: 0;
+  padding-left: 25px;
 }
 
 
@@ -36,18 +42,14 @@ main, article, section {
   border: none;
 }
 
-aside {
-  background: lightblue;
-  border: none;
-}
 
 form {
   display: block;
-  background: lavenderblush;
-  margin: 15px;
-  padding: 15px;
-  border: 5px solid lightcoral;
-  border-radius: 30px;
+  background: white;
+  margin: 0;
+  padding: 30px;
+  border-top: 5px solid lightcoral;
+  border-bottom: 5px solid lightcoral;
 }
 
 footer {
@@ -70,6 +72,25 @@ h3:nth-child(3) {
   color: navy;
 }
 
+ textarea {
+   width: 100%;
+   resize: none;
+   height: 175px;
+ }
+
+ input[type=submit] {
+   width: 100%;
+   padding: 10px;
+   background-color: lightblue;
+   border: 1px solid navy;
+   border-radius: 5px;
+   color: purple;
+   font-size: 20px;
+   text-decoration: bold;
+
+ }
+
+
 /* class styles */
 
 .topnav {
@@ -90,6 +111,48 @@ h3:nth-child(3) {
   background-color: lightcoral;
   color: white;
 }
+
+.more {
+  background-color: lightblue;
+  border: 2px solid navy;
+  border-radius: 20px;
+}
+
+.education {
+  padding-bottom: 20px;
+}
+
+.sidebar {
+  border-top: 2px dotted navy;
+  padding-top: 20px;
+}
+
+.prompt {
+  color: black;
+  text-decoration: bold;
+}
+
+/* id styles */
+
+#fname, #message {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+}
+
+#inquiry {
+  margin-top: 10px;
+}
+
+#speaker {
+  margin-bottom: 20px;
+}
+
+
+
 
 /* media queries */
 
@@ -190,12 +253,11 @@ h3:nth-child(3) {
 
   .about_me {
     padding-right: 15px;
-    width: 70%;
+    width: 60%;
   }
 
   .more {
-    /* flex-grow: 5; */
-    width: 30%;
+    width: 40%;
   }
 
   .myname {
@@ -208,23 +270,30 @@ h3:nth-child(3) {
     font-size: 20px;
   }
 
-  .about_me {
+  /* .about_me {
     width: 60%;
   }
 
   .more {
-    /* flex-grow: 5; */
     width: 40%;
-  }
+    height: 100%;
+  } */
 }  
 
 @media (min-width: 1200px) {
-  li {
-    list-style-type: none;
+
+  .about_me {
+    padding-right: 15px;
+    width: 65%;
   }
 
   .more {
-    text-align: center;
+    width: 35%;
   }
+  /* li {
+    list-style-type: none;
+  } */
+
+ 
 
 }

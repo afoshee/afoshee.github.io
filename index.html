@@ -24,7 +24,7 @@
                         
         <!-- Main Content -->
         <main class="flexbox">
-            <div class="about_me">
+            <div class="about_me" id="about">
                 <article class="about wrapper">
                     <h2>About Me</h2>
                         <p>
@@ -32,7 +32,7 @@
                         </p>
                 </article>
 
-                <article class="experience wrapper">
+                <article class="experience wrapper" id="experience">
                     <h2>Experience</h2>
                         <section class="ex_item1">
                             <h3>Higher Education</h3>
@@ -69,7 +69,7 @@
 
 
             <div class="more">
-                <aside class="education wrapper">
+                <aside class="education wrapper" id="education">
                     <h2>Education</h2>
                         <p>
                             Master of Science in Business Communication<br> 
@@ -131,29 +131,29 @@
             </div>
         </main>
 
-            <form name="contactform" onsubmit="return validateForm()" method="post"> 
+        <form id="contact" name="contactform" onsubmit="return validateForm()" method="post"> 
 
-                <label for="fname">Full Name</label></b><br>
-                <input type="text" id="fname" name="fullname" placeholder="Your full name"><br> 
+            <label class="prompt" for="fname">Full Name</label></b><br>
+            <input type="text" id="fname" name="fullname" placeholder="Your full name"><br> 
 
-                <label for="reason">Why are you contacting me today?</label><br> 
-                    <span>
-                        <input type="radio" id="inquiry" name="reason" value="inquiry">
-                        <label for="inquiry">General Inquiry</label>
-                        
-                        <input type="radio" id="training" name="reason" value="training">
-                        <label for="inquiry">Book a training</label>
+            <label class="prompt" for="reason">Why are you contacting me today?</label><br> 
+                <!-- <span id="why"> -->
+                    <input type="radio" id="inquiry" name="reason" value="inquiry">
+                    <label for="inquiry">General Inquiry</label><br>
+                    
+                    <input type="radio" id="training" name="reason" value="training">
+                    <label for="inquiry">Book a training</label><br>
 
-                        <input type="radio" id="speaker" name="reason" value="speaker">
-                        <label for="inquiry">Book a speeking engagement</label>                    
-                    </span><br>
+                    <input type="radio" id="speaker" name="reason" value="speaker">
+                    <label for="inquiry">Book a speeking engagement</label><br>                    
+                <!-- </span> -->
 
-                <label for="message">Please type your message below.</label><br>
-                <textarea id="message" name="message" placeholder="Type here..."></textarea><br> 
+            <label class="prompt" for="message">Please type your message below.</label><br>
+            <textarea id="message" name="message" placeholder="Type here..."></textarea><br> 
 
 
-                <input type="submit" value="Submit">
-            </form>
+            <input type="submit" value="Submit">
+        </form>
 
 
         <!-- </main> -->
