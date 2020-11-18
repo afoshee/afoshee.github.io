@@ -90,12 +90,17 @@ input[type=submit] {
 }
 
 button {
-  width: 90%;
+  width: 95%;
   border: none;
-  background: rosybrown;
+  background-color: rosybrown;
+  text-align: left;
   margin: 10px;
   padding: 20px;
+  border-radius: 5px;
+}
 
+button:hover {
+  background-color: lightcoral
 }
 
 /* class styles */
@@ -158,16 +163,24 @@ button {
   margin-bottom: 20px;
 }
 
-#higherEd {
+/* #higherEd {
   display: none;
+  padding: 10px;
 }
 
 #culture {
   display: none;
+  padding: 10px;
 }
 
 #nonProfit {
   display: none;
+  padding: 10px;
+} */
+
+#higherEd, #culture, #nonProfit {
+  display: none;
+  padding: 10px;
 }
 
 
