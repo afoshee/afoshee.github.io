@@ -72,24 +72,31 @@ h3:nth-child(3) {
   color: navy;
 }
 
- textarea {
-   width: 100%;
-   resize: none;
-   height: 175px;
- }
+textarea {
+  width: 100%;
+  resize: none;
+  height: 175px;
+}
 
- input[type=submit] {
-   width: 100%;
-   padding: 10px;
-   background-color: lightblue;
-   border: 1px solid navy;
-   border-radius: 5px;
-   color: purple;
-   font-size: 20px;
-   text-decoration: bold;
+input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  border: 1px solid navy;
+  border-radius: 5px;
+  color: purple;
+  font-size: 20px;
+  text-decoration: bold;
+}
 
- }
+button {
+  width: 90%;
+  border: none;
+  background: rosybrown;
+  margin: 10px;
+  padding: 20px;
 
+}
 
 /* class styles */
 
@@ -149,6 +156,18 @@ h3:nth-child(3) {
 
 #speaker {
   margin-bottom: 20px;
+}
+
+#higherEd {
+  display: none;
+}
+
+#culture {
+  display: none;
+}
+
+#nonProfit {
+  display: none;
 }
 
 

@@ -34,14 +34,24 @@
 
                 <article class="experience wrapper" id="experience">
                     <h2>Experience</h2>
-                        <section class="ex_item1">
-                            <h3>Higher Education</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
-                                </p>
-                        </section>
 
-                        <section class="ex_item2">
+
+                        <button onclick="dropDown()">Higher Education</button>
+                            <div id="higherEd">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
+                            </div>
+
+                        <button onclick="dropDown2()">Arts & Culture</button>
+                            <div id="culture">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
+                            </div>
+
+                        <button onclick="dropDown3()">Non-Profit Administration</button>
+                            <div id="nonProfit">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
+                            </div>
+
+                        <!-- <section class="ex_item2">
                             <h3>Arts & Culture</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
@@ -53,7 +63,7 @@
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ex orci, lacinia sit amet ex id, bibendum pharetra nisi. Fusce eu imperdiet felis. Suspendisse dolor felis, dignissim vitae pulvinar sit amet, tincidunt eu nulla. Aenean pretium sed quam non porttitor. Mauris malesuada urna ut luctus faucibus. Praesent vel laoreet enim, ut sodales felis. Proin tempus risus at est fermentum ultrices. Cras mollis sem et quam ultrices ullamcorper. In venenatis sagittis risus. Donec sed faucibus mi, vitae viverra purus.
                                 </p>
-                        </section>
+                        </section> -->
                 </article>
             </div>
 
@@ -133,6 +143,8 @@
 
         <form id="contact" name="contactform" onsubmit="return validateForm()" method="post"> 
 
+            <h2>Send Me a Message</h2>
+
             <label class="prompt" for="fname">Full Name</label></b><br>
             <input type="text" id="fname" name="fullname" placeholder="Your full name"><br> 
 
@@ -160,7 +172,7 @@
         <!-- Footer -->
         <footer class="footer">
             <li>Email: <a href="mailto:annafosh@gmail.com&subject=Hello!%20I%20want%20to%20learn%20more!" target="_top">anna.fosh@gmail.com</a></li>
-            <li>Phone: (555)555-5555</li>
+            <li>Phone: (555) 555-5555</li>
             <li><a href="#">LinkedIn</a></li>
             <p>Copyright 2020, Anna Foshee</p>
         </footer>
