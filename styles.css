@@ -4,9 +4,7 @@
 /* tag styles */
 
 html {
-  /* font-size: 100%; */
   background: rosybrown;
-  /* display: block; */
 }
 
 body {
@@ -15,11 +13,6 @@ body {
   font-family: Arial,Helvetica,sans-serif;
   font-size: 1rem;
   color: black;
-}
-
-.wrapper {
-  margin: auto;
-  /* max-width: 75rem; */
 }
 
 footer, header, main, section {
@@ -54,6 +47,9 @@ form {
 
 footer {
   background: rosybrown;
+  list-style-type: none;
+  text-align: center;
+  line-height: 23px;
 }
 
 header {
@@ -84,7 +80,7 @@ input[type=submit] {
   background-color: lightblue;
   border: 1px solid navy;
   border-radius: 5px;
-  color: purple;
+  color: darkmagenta;
   font-size: 20px;
   text-decoration: bold;
 }
@@ -97,17 +93,29 @@ button {
   margin: 10px;
   padding: 20px;
   border-radius: 5px;
+  font-size: 17px;
+  color: black;
 }
 
 button:hover {
-  background-color: lightcoral
+  background-color: lightcoral;
+  color: white;
 }
 
 h4 {
   margin-bottom: 10px;
 }
 
+
 /* class styles */
+
+.wrapper {
+  margin: auto;
+}
+
+.myname {
+  color: darkmagenta;
+}
 
 .topnav {
   overflow: hidden;
@@ -167,21 +175,6 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* #higherEd {
-  display: none;
-  padding: 10px;
-}
-
-#culture {
-  display: none;
-  padding: 10px;
-}
-
-#nonProfit {
-  display: none;
-  padding: 10px;
-} */
-
 #higherEd, #culture, #nonProfit {
   display: none;
   padding-left: 25px;
@@ -195,7 +188,7 @@ h4 {
 
 @media (min-width: 650px) {
   body {
-    color: purple;
+    color: black;
     display: block;
   }
 
@@ -209,80 +202,14 @@ h4 {
   .topnav a {
     display: inline-block;
   }
-
-
 }
 
-@media (min-width: 650px) and (max-width: 1100px) {
-  /* body {
-    color: purple;
-    display: block;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: baseline;
-  }
-
-  .topnav a {
-    display: inline-block;
-  }
-
-  .flexbox {
-    display: flex;
-    padding: 30px 30px 30px 50px;
-  }
-
-  .about_me {
-    padding-right: 15px;
-    width: 70%;
-  }
-
-  .more {
-    /* flex-grow: 5; */
-    /* width: 30%;
-  } */ 
-
-  /* main {
-    float: left;
-    width: 70%;
-  }
-
-  div {
-    float: right;
-    width: 30%;
-  } */
-
-
-/* 
-  form {
-    display: block;
-    background: lavenderblush;
-    margin: 0;
-    padding: 0;
-    border: 5px solid lightcoral;
-    border-radius: 0;
-  } */
-
-
-
-}
  
 @media (min-width: 1000px) {
-
-  /* body {
-    color: black;
-  }
-
   header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    align-items: baseline;
-  } */
-
+    padding: 30px;
+  }
+  
   .flexbox {
     display: flex;
     padding: 30px 30px 30px 50px;
@@ -299,22 +226,11 @@ h4 {
 
   .myname {
     font-size: 40px;
-
   }
 
   .topnav a {
-    /* display: inline-block; */
     font-size: 20px;
   }
-
-  /* .about_me {
-    width: 60%;
-  }
-
-  .more {
-    width: 40%;
-    height: 100%;
-  } */
 }  
 
 @media (min-width: 1200px) {
@@ -327,10 +243,4 @@ h4 {
   .more {
     width: 35%;
   }
-  /* li {
-    list-style-type: none;
-  } */
-
- 
-
 }
